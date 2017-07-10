@@ -1,0 +1,2499 @@
+@font-face {
+	font-family: 'flexslider-icon';
+	src: url('../fonts/flexslider-icon.eot');
+	src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../fonts/fontello.eot?18856740');
+	src: url('../fonts/fontello.eot?18856740#iefix') format('embedded-opentype'), url('../fonts/fontello.woff2?18856740') format('woff2'), url('../fonts/fontello.woff?18856740') format('woff'), url('../fonts/fontello.ttf?18856740') format('truetype'), url('../fonts/fontello.svg?18856740#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+    width: 100%;
+    background-image: url("../img/paper.png");
+
+}
+
+#main{
+    display: inline-block;
+
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.post {
+    opacity: 0;
+}
+
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+/******** header*******/
+
+#headermobile{
+    display: none;
+}
+#header{
+    width: 100vw;
+	z-index: 100;
+	text-align: right;
+    color: gray;
+    font-family: 'montserrat';
+
+}
+#header ul {
+	display: inline-block;
+
+	font-size: .8rem;
+	width: 100%;
+    padding-top: 2.5%;
+    padding-right: 10%;
+    letter-spacing: .05rem;
+
+}
+
+#header ul li {
+	width: 10%;
+	vertical-align: middle;
+	float: right;
+    text-align: center;
+	position: relative!important;
+
+}
+#header ul li a{
+	color: #231f20;
+    text-transform: uppercase;
+    text-decoration: none;
+     display: inline;
+    border-bottom: 3px solid transparent;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 20px
+}
+
+#header ul li a:hover{
+	color: #5c5c5b;
+    border-bottom: 2px solid #5c5c5b;
+    width:100%;
+}
+#header ul li a:active{
+	color: #5c5c5b;
+    border-bottom: 2px solid #5c5c5b;
+    width:100%;
+}
+/*** header projects***/
+.projectmenu{
+
+}
+#sideheader{
+
+	z-index: 100;
+    font-family: 'montserrat';
+    transform: rotate(270deg);
+    display: inline-block;
+    width: 100%;
+    float: left;
+    transform-origin: left top 0;
+    padding-top: 5%;
+
+}
+
+#sideheader ul {
+	display: inline;
+	font-size: .8rem;
+    letter-spacing: .05rem;
+    margin-left: -40%;
+    letter-spacing: .05rem;
+
+
+
+
+}
+
+#sideheader ul li {
+	width: 8%;
+    text-align: center;
+    display: inline;
+    padding: 0% 2% 0 0;
+
+
+
+
+
+
+}
+#sideheader ul li a{
+	color: #231f20;
+    text-decoration: none;
+    display:inline;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 20px;
+
+
+}
+
+#sideheader ul li a:hover{
+	color: #5c5c5b;
+    border-bottom: 2px solid #5c5c5b;
+    width:100%;
+}
+
+#sideheader ul li a:visited{
+	color: #5c5c5b;
+    border-bottom: 2px solid #5c5c5b;
+    width:100%;
+}
+ /****** nav mobile ******/
+
+.mobilenav{
+    display: none;
+}
+
+.handle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    #sideheader{
+        display: none;
+    }
+
+ .mobilenav{
+background-image: url("../img/paper.png");
+display: block;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10000;
+}
+.mobilehead{
+    color: #231f20;
+    padding: 15px;
+    overflow: hidden;
+   
+    
+}
+.handle{
+    float: right;
+    background: transparent;
+    color: #5c5c5b;
+    border: none;
+    font-size: 1rem;
+display: block;
+    cursor: pointer;
+    text-decoration: none;
+ 
+   
+
+}
+
+ .mobilenav a{
+    text-decoration: none;
+    color: #231f20;
+      font-family: 'montserrat';
+     text-transform: uppercase;
+     letter-spacing: .05rem;
+     font-size: .9rem;
+    
+}
+
+.mobilenav ul{
+    overflow: hidden;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: max-height 0.5s;
+    width: 100%;
+    max-height: 0;
+    
+}
+    .mobilenav ul.show{
+    max-height: 20em;
+    
+}
+
+.mobilenav ul li{
+    display: inline-block;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+    .mobilenav ul li a:hover{
+	color: #5c5c5b;
+    border-bottom: 2px solid #5c5c5b;
+    width:100%;
+}
+    
+    }
+/******** home img*******/
+
+#home{
+     height: 100vh;
+}
+.tittle-wrap{
+    text-align: center;
+
+}
+.tittle{
+	width: 65%;
+    padding-top: 0%;
+}
+
+/***** projects ******/
+#projectsleft{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+}
+
+.sectionprojects{
+    width: 100%;
+}
+.tittleproject{
+    color: #231f20;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    font-family: 'montserrat';
+    font-size: .8rem;
+    letter-spacing: 5rem;
+    text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+}
+
+.fanfare{
+    width: 55%;
+    float: left;
+    margin-left: 5%;
+}
+.fanfare img{
+    width: 86%;
+    padding-left: 25%;
+    padding-top: 5%;
+    
+}
+
+
+.titulo {
+    position: absolute;
+    width: 30%;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: #444444;
+    left: 45.5%;
+    margin-top: 5%;
+    line-height: 5rem;
+
+}
+
+
+.subtitulo{
+    width: 23%;
+    text-align: left;
+    float: left;
+    margin-left: 5%;
+    font-family: 'Raleway', sans-serif;
+     line-height: 1rem;
+    font-size: .6rem;
+    color: #474747;
+    text-transform: uppercase;
+     letter-spacing: .09rem;
+    margin-top: 32%;
+
+}
+
+.plus{
+
+     width: 13%;
+    float: left;
+    margin-left: 5%;
+    font-family: 'montserrat', sans-serif;
+     line-height: 1rem;
+    font-size: .7rem;
+    color: #474747;
+    text-transform: uppercase;
+     letter-spacing: .09rem;
+    margin-top: 2%;
+    font-weight: 800;
+    text-decoration: none;
+    border: 2px solid #474747;
+    padding: 1.3%;
+    text-align: center;
+    transition: .5s;
+
+
+}
+.plus a{
+    color: #474747;
+}
+.plus:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+#projectsright{
+    width: 100%;
+    position: relative;
+
+
+}
+.sectionprojectsright{
+    width: 100%;
+
+}
+
+
+.tituloright {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: #444444;
+    margin-top: 10%;
+    line-height: 5rem;
+    float: left;
+    transition: .5s;
+
+
+}
+
+
+.tituloright p{
+    padding-left: 30%;
+    margin-top: 27%;
+}
+
+.duel{
+    width: 55%;
+    float: right;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.duel img{
+    width: 90%;
+    padding-right: 23%;
+    padding-top: 0%;
+    float:right;
+    padding-left: 7%;
+    
+}
+
+
+.subtituloright{
+    width: 23%;
+    text-align: left;
+    float: left;
+    margin-left: 19%;
+    font-family: 'Raleway', sans-serif;
+     line-height: 1rem;
+    font-size: .6rem;
+    color: #474747;
+    text-transform: uppercase;
+     letter-spacing: .09rem;
+    margin-top: 5%;
+
+}
+
+.plusright{
+
+     width: 13%;
+    float: left;
+    margin-left: 19%;
+    font-family: 'montserrat', sans-serif;
+     line-height: 1rem;
+    font-size: .7rem;
+    color: #474747;
+    text-transform: uppercase;
+     letter-spacing: .09rem;
+    margin-top: 2%;
+    font-weight: 800;
+    text-decoration: none;
+    border: 2px solid #474747;
+    padding: 1.3%;
+    text-align: center;
+    transition: .5s;
+
+}
+.plusright a{
+    color: #474747;
+}
+
+.plusright:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+#projectsleft2{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+}
+
+.titulo3 {
+    position: absolute;
+    width: 30%;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: #444444;
+     left: 45.5%;
+    margin-top: 118%;
+    line-height: 5rem;
+    transition: .5s;
+
+}
+
+
+.infoduel p{
+    font-size: .8rem;
+    font-family: 'montserrat';
+    margin-top: 0%;
+    text-align: center;
+    transition: .7s;
+
+
+}
+.infoduel a{
+    color: #444444;
+}
+
+.infoduel a:hover{
+    color: #958d99;
+
+
+}
+
+.titulo4 {
+    position: absolute;
+    width: 30%;
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: #444444;
+     left: 45.5%;
+    margin-top: 229%;
+    line-height: 5rem;
+    transition: .5s;
+
+}
+
+
+/******** instagram ********/
+
+#insta{
+
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-top: 10%;
+     
+}
+
+.instatittle{
+    width: 100% !important;
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'raleway';
+    font-weight: 400;
+    letter-spacing: .15rem;
+    color: #231f20;
+    font-size: 1rem;
+
+
+}
+.instatittle a{
+    color: #231f20;
+}
+
+.instatittle1{
+    width: 100% !important;
+    text-align: center;
+    padding-top: 4%;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.1rem;
+    color:#231f20;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+}
+
+.instaline{
+    width: 2%;
+    height: 1.5px;
+    background-color: #231f20;
+    opacity: .8;
+    margin: auto;
+    margin-top: 3%;
+     transform: rotate(90deg);
+}
+
+/*** slider instagram ***/
+
+
+
+#photos .wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+     
+    padding-bottom: 5%;
+}
+
+#slider {
+	width: 100%;
+	padding-left: 0%;
+    padding-top: 3%;
+
+}
+
+
+
+.flex-viewport {}
+
+.flex-control-nav {
+	display: none;
+}
+
+
+.flexslider {
+	max-width: 100%;
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0px;
+}
+
+.flexslider a{
+    color: white !important;
+    font-weight: bolder !important;
+}
+
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: bold;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 3em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.flexslider .slides img {
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-direction-nav li:first-child {
+
+    padding-left: 0% !important;
+    color:white;
+		width: 45%;
+
+
+}
+
+.flex-direction-nav li:last-child {
+    padding-right: 0% !important;
+    color:white;
+		45%;
+
+}
+
+.flex-direction-nav a:before {
+    font-size: 2.3vw;
+    font-weight: bolder;
+
+}
+
+
+/****** footer ******/
+
+.footer{
+    background-color: white;
+    height: 24vh;
+
+}
+
+.community{
+    width: 40%;
+        background-color: white;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: left;
+    float: left;
+    padding-left: 5%;
+}
+.community a{
+
+    padding-left: 10%;
+}
+
+.community img{
+    width: 2.3rem;
+}
+.linecom{
+     width: 5%;
+    height: 2px;
+    background-color: gray;
+    opacity: .8;
+    margin-top: 3%;
+     transform: rotate(90deg);float: left;
+
+
+
+}
+
+.rights p::after{
+    content: " l ";
+    font-size: 1.1rem;
+    color: gray;
+   font-weight: 100;
+   font-family: 'Open Sans', sans-serif;
+    opacity: .8;
+    text-transform: lowercase;
+
+
+}
+.rights{
+    width: 40%;
+        background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: right;
+    float: left;
+    font-family: "raleway";
+        letter-spacing: .18rem;
+     color: gray;
+    font-size: .8rem;
+    text-transform: uppercase;
+
+}
+.con{
+     width: 20%;
+        background-color: white;
+    padding-top: 5.4%;
+    padding-bottom: 5%;
+    text-align: left;
+    float: left;
+    font-family: "raleway";
+        letter-spacing: .18rem;
+     color: gray;
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding-left: .6%;
+
+
+
+}
+.con a{
+    color: gray;
+   font-size: .8rem;
+
+}
+
+
+/******** WORK *******/
+
+#start{
+    width: 100%;
+    float: left;
+    height:100vh;
+    background-image: url("../img/paper.png");
+}
+
+.tittlework-wrap{
+    text-align: left;
+
+
+}
+.tittlework{
+	width: 27%;
+    padding-top: 0%;
+    margin-left: 15%;
+    float: left;
+
+}
+
+.imagestext{
+    width: 100%;
+
+
+
+}
+
+
+
+.contentwork{
+    width: 30%;
+    text-align: left;
+    float: left;
+    font-family: 'raleway';
+    line-height: 1.8rem;
+    padding-top: 15%;
+    margin-left: 13%;
+
+
+}
+.center{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+
+}
+.intro{
+    width: 80%;
+    text-align: left;
+    margin-left: 15%;
+      padding-top: 5%;
+
+
+}
+.role{
+    font-family: 'montserrat';
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: #919191;
+    float: left;
+
+}
+
+.h{
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    margin: 0 10px 3px 10px ;
+    background-color: #919191;;
+}
+
+.information{
+   font-family: 'Playfair Display', serif;
+     font-size: .9rem;
+    color: #474747;
+    font-style: italic;
+    letter-spacing: .03rem;
+
+
+}
+
+.titleintro{
+    width:40%;
+    font-family: 'montserrat';
+    font-size:2.5rem;
+   color:#919191;;
+    margin-top: 2.5%;
+    padding-top: 2.5%;
+    float:left;
+    padding-bottom: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: left;
+
+
+
+}
+
+
+.images{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+.design{
+    width: 60%;
+    padding:3% ;
+    float: left;
+   text-align: center;
+    padding-left: 7%;
+    margin-top: 5%;
+
+}
+.contentdesign{
+    width: 100%;
+
+
+}
+
+.infointro{
+     width:30%;
+    text-align: left;
+    font-family: 'raleway';
+    line-height: 1.5rem;
+    padding-top: 5%;
+    float: left;
+    padding-right: 5%;
+    line-height: 2rem;
+
+
+
+
+}
+
+.l{
+
+    width: 2%;
+    height: 2px;
+    margin: 0 10px 3px 10px ;
+    background-color:#919191;;
+    float: left;
+
+
+}
+
+.design2{
+    width: 47%;
+    padding:3% ;
+    float: right;
+   text-align: center;
+    padding-right: 7%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.titleintro2{
+    width:40%;
+    font-family: 'montserrat';
+    font-size:2.5rem;
+    color:#919191;
+    padding-top: 2.5%;
+    margin-top: 7.5%;
+    float:left;
+    padding-bottom: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: right;
+
+
+}
+
+.l2{
+
+    width: 2%;
+    height: 2px;
+    margin: 0 10px 3px 0px ;
+    background-color: #919191;
+    float: left;
+
+
+}
+
+.infointro2{
+    width: 25%;
+    text-align: left;
+    font-family: 'raleway';
+    line-height: 1.5rem;
+    padding-top: 3%;
+    float: left;
+    margin-left: 12%;
+    line-height: 2rem;
+
+
+}
+
+.mobile{
+    width: 30%;
+    margin-left: 12%;
+    padding-top:9%;
+    float: left;
+}
+
+
+.titleintro3{
+    width:40%;
+    font-family: 'montserrat';
+    font-size:2.5rem;
+    color:#919191;
+    padding-top: 5%;
+    float:right;
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+.infointro3{
+     width:30%;
+    text-align: left;
+    font-family: 'raleway';
+    line-height: 1.5rem;
+    padding-top: 5%;
+    float: right;
+    padding-right: 5%;
+    line-height: 2rem;
+        margin-right: 7%;
+
+
+
+}
+
+
+.l3{
+
+    width: 2%;
+    height: 2px;
+    margin: 0 10px 3px 10px ;
+    background-color: #919191;
+    float: right;
+
+
+}
+/******** hibbbou *******/
+
+.endhibbbou{
+    width: 100%;
+    background-image: url("../img/backgroundhibbbou.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endhibbbou p{
+     font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+
+.endline{
+    width: 3.2%;
+    height: 2px;
+    background-color: white;
+    opacity: .8;
+    margin: auto;
+    margin-top: 0%;
+     transform: rotate(90deg);
+    }
+
+/***** Tapiela  ****/
+
+.endtapiela{
+    width: 100%;
+    background-image: url("../img/backgroundtapiela.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endtapiela p{
+     font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+
+
+/***** Duel  ****/
+
+.endduel{
+    width: 100%;
+    background-image: url("../img/backgroundduel.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endduel p{
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+
+/***** Fanfare  ****/
+
+.endfanfare{
+    width: 100%;
+    background-image: url("../img/backgroundfanfare.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endfanfare p{
+     font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+
+
+/*****  Monster  ****/
+
+.endmonster{
+    width: 100%;
+    background-image: url("../img/backgroundmonster.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endmonster p{
+     font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+   /******** about  ******/
+.backgroundabout{
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-right: 5%;
+  
+    background-color: white;
+    height: 208vh;
+}
+
+.picofme img{
+    width:40%;
+    float: left;
+    margin-left: 6%;
+
+}
+
+.infofme {
+    width:40%;
+    float: right;
+    margin-right: 6%;
+    font-family: 'Playfair Display', serif;
+     font-size: 1.3rem;
+    letter-spacing: .01rem;
+    line-height: 3rem;
+    text-align: justify;
+
+}
+
+.secondpicture{
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+
+#insta2{
+
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+   
+     
+}
+
+#photos2 .wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    padding-bottom: 5%;
+}
+
+.instatittlemeis a{
+    color:  #231f20;
+}
+
+.instatittleme{
+    width: 100% !important;
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #231f20;
+}
+
+.instalineme{
+    width: 2%;
+    height: 1.5px;
+    background-color:  #231f20;
+    opacity: .8;
+    margin: auto;
+    margin-top: 3%;
+    transform: rotate(90deg);
+}
+
+.instatittlemeis{
+    width: 100% !important;
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'raleway';
+    font-weight: 400;
+    letter-spacing: .15rem;
+    color: #231f20;
+    font-size: 1rem;
+
+
+}
+
+/********** art *********/
+
+.paintings{
+  width: 93%;
+  margin-left: 7%;
+  margin-top: 5%;
+
+
+}
+
+.paintings img{
+    width: 100%;
+    float: none;
+    
+}
+
+.paint{
+  width: 30%;
+  margin-left: 2%;
+  text-align: justify;
+  font-size: .6rem;
+  font-weight: 100;
+  font-family: 'monterrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  float: none;
+  margin-bottom: 3%;
+  vertical-align: middle;
+  display: inline-block;
+
+
+
+}
+.paint p{
+  padding-top:3%;
+  line-height: 1rem;
+}
+
+
+
+
+
+/***** Contact *****/
+
+.tittleproject2{
+    color: #231f20;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: left;
+    margin-left: 19%;
+    font-family: 'montserrat';
+    font-size: .8rem;
+    letter-spacing: 3rem;
+    text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+}
+
+#mainabout{
+    display: block;
+}
+
+
+#electronic{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 7%;
+    
+}
+
+
+.mailcontact{
+    width: 50%;
+    margin-bottom: 15%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size:3rem;
+    letter-spacing: .01rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 35%;
+    color: #474747;
+    
+}
+.buttonmail{
+    border: 2px solid #474747;
+    color: #474747;
+    font-family: 'montserrat';
+    font-size: .8rem;
+    padding: 4%;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    margin-left: 35%;
+    transition: .5s;
+    letter-spacing: .2rem;
+
+    
+}
+
+.buttonmail a{
+     color: #474747;
+    
+}
+.buttonmail:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+
+
+
+#contactform {
+   font-family: 'Playfair Display', serif;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    font-size:3rem;
+    letter-spacing: .01rem;
+    line-height: 3rem;
+     color: #474747;
+    float: left;
+    width: 50%;
+
+  
+}
+
+#titlecontact {
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 4%;
+}
+	#contactform input {
+    background-image: url("../img/paper.png");
+    color: #5c5c5b !important;
+    outline: none;
+    font-family: 'raleway', sans-serif;
+    text-align: left;
+    border: 2px solid #474747;
+    font-size: .7rem;
+    line-height: 2rem;    
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    padding-left: 1%;
+    margin-top: 4%;
+    margin-right: 18%;
+    width: 62%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+
+#contactform textarea {
+    background-image: url("../img/paper.png");
+    color:#5c5c5b !important;
+    outline: none;
+    font-family: 'raleway', sans-serif;
+    text-align: left;
+    border: 2px solid #474747;
+   font-size: .7rem;
+    color: #474747;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    line-height: 2rem;
+    margin-right: 18%;
+    margin-top: 4%;
+    width: 62%;
+    padding-left: 1%;
+}
+
+#submit {
+    text-align: center !important;
+    cursor: pointer;
+    width: 25% !important;
+    margin-left: 37% !important;
+    margin-top: 3% !important;
+    transition: .5s !important;
+    border: 2px solid #474747 !important;
+    margin-bottom: 5%;
+    color: #474747 !important;
+    font-family: 'montserrat' !important;
+    font-size: .8rem !important;
+    letter-spacing: .2rem !important;
+
+    
+}
+
+#submit:hover{
+    background: none;
+     border: 2px solid lightgray !important;
+    background-color: lightgray !important;
+   
+}
+
+/******************* RESPONSIVE ****************/
+
+/****** mobile @media (max-width: 1024px) ipad *****/
+
+
+
+@media (max-width: 1024px) {
+    
+    #header ul li {
+    width: 13% !important;
+
+}
+    
+    .sectionprojects {
+    width: 100%; 
+}
+ 
+    
+    #projectsleft {
+    width: 90%;
+    position: inherit;
+    margin-top: 4%;
+    margin-left: 5%;    
+
+}
+    
+    #projectsright{
+        margin-bottom: 8%;
+    }
+    
+    .tittleproject {
+ 
+    width: 80%;
+  
+    margin-left: 10%;
+    letter-spacing: 5rem;
+   
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+    
+    .fanfare {
+    width: 60%;
+    margin-left: 20%;
+        float: none;
+}
+    .titulo {
+    position: inherit;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: #444444;
+    margin-left: 15%;
+    margin-top: 3%;
+    line-height: 5rem;
+        left: 0%;
+        text-align: center;
+float: none;
+}
+    
+    .fanfare img {
+    width: 80%;
+    padding-left: 0%;
+    padding-top: 20%;
+        margin-left: 10%;
+}
+    
+    .subtitulo {
+    width: 90%;
+    text-align: center;
+    float: none;
+    margin-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    color: #474747;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    margin-top: 0%;
+  
+    
+}
+    
+    .subtitulo p{
+        width: 30%;
+        margin-left: 35%;
+        margin-bottom: 7%;
+        
+    }
+    
+
+    
+    .plus {
+    width: 17%;
+    float: none;
+    margin-left: 41%;
+    font-weight: 800;
+    text-decoration: none;
+    border: 2px solid #474747;
+    padding: 1.7%;
+    text-align: center;
+    transition: .5s;
+}
+    
+    .tituloright {
+   position: none;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: #444444;
+    margin-left: 15%;
+    margin-top: 3%;
+    line-height: 5rem;
+    left: 0%;
+    text-align: center;
+}
+    .tituloright p {
+        width: 80%;
+    padding-left: 0%;
+    margin-top: 0%;
+        margin-left: 10%;
+}
+    .duel {
+    width: 60%;
+    float: none;
+        margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+  
+    .duel img {
+     width: 80%;
+    padding-left: 0%;
+    padding-top: 5%;
+    margin-left: 10%;
+    float: none;
+    padding-right: 0%;
+    
+}
+    .subtituloright {
+     width: 90%;
+    text-align: center;
+    float: none;
+    margin-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    color: #474747;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    margin-top: 0%;
+}
+     .subtituloright p{
+        width: 30%;
+        margin-left: 35%;
+        margin-bottom: 7%;
+        
+    }
+    
+    .plusright {
+    width: 17%;
+    float: none;
+    margin-left: 41%;
+    font-weight: 800;
+    text-decoration: none;
+    border: 2px solid #474747;
+    padding: 1.7%;
+    text-align: center;
+    transition: .5s;
+    
+}
+    .mobileinfo{
+        margin-top: 10% !important;
+        margin-bottom: 10% !important;
+    }
+      .titulo3 {
+   position: inherit;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: #444444;
+    margin-left: 15%;
+    margin-top: 10%;
+    line-height: 5rem;
+    left: 0%;
+    text-align: center;
+}
+      .titulo4 {
+   position: inherit;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: #444444;
+    margin-left: 15%;
+    margin-top: 10%;
+    line-height: 5rem;
+    left: 0%;
+    text-align: center;
+}
+    
+    /******* about mobile 1024 ****/
+    
+    .infofme {
+    width: 40%;
+    float: right;
+    margin-right: 6%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    letter-spacing: .01rem; 
+    line-height: 2.5rem;
+    text-align: justify;
+}
+    .backgroundabout {
+   
+    height: 168vh;
+}
+    #sideheader ul {
+
+    margin-left: -50%;
+    
+}
+    .tittle {
+    width: 65%;
+    padding-top: 10%;
+}
+
+}
+@media (max-width: 768px) {
+    
+     .tittle {
+ 
+    padding-top: 20%;
+   
+}
+    .fanfare{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .duel{
+        width: 80%;
+        margin-left: 10%;
+    }
+  .titulo {
+    font-size: 4rem;
+
+    line-height: 3.5rem;
+    
+}
+    .titulo3 {
+    font-size: 4rem;
+
+    line-height: 3.5rem;
+    
+}
+    .tituloright {
+    font-size: 4rem;
+
+    line-height: 3.5rem;
+    
+}
+    .titulo4 {
+    font-size: 4rem;
+
+    line-height: 3.5rem;
+    
+}
+    .subtitulo p {
+    width: 40%;
+    margin-left: 30%;
+        text-align: justify;
+        font-size: .8rem;
+   
+}
+     .subtituloright p {
+    width: 40%;
+    margin-left: 30%;
+        text-align: justify;
+        font-size: .8rem;
+   
+}
+    
+    .duel{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .menu.deskmenu{
+        display: none !important;
+        
+
+        
+    }
+    #sideheader ul {
+
+    margin-left: -60%;
+    
+}
+    .flex-direction-nav a:before {
+    font-size: 4.3vw;
+    font-weight: bolder;
+}
+    .instatittle1 {
+    padding-top: 10%;
+    
+}
+    .community {
+    width: 60%;
+   float: none; 
+    padding-left: 0%; 
+    margin-left: 24%;
+}
+    .rights {
+        width: 58%;}
+    
+    
+    /****** projects *****/
+    .contentwork {
+    width: 45%;
+        margin-left: 0%;
+    }
+    
+    .design {
+    width: 80%;
+    float: none;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+    
+    .intro {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    padding-top: 0;
+    line-height: 2rem;
+}
+    .titleintro {
+    width: 50%;
+    float: none;
+    text-align: center;
+    margin-left: 25%;
+}
+    .l{
+        margin: 0px 10px 3px 233px;
+    }
+    
+    .infointro {
+    width: 60%;
+    padding-top: 5%;
+    float: none;
+    padding-right: 0%;
+    margin-left: 20%;
+    padding-bottom: 10%;
+        text-align: justify;
+}
+    
+    .design2 {
+    width: 70%;
+    padding: 3%;
+    float: none;
+    text-align: center;
+    padding-right: 0;
+    margin-top: 3%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+    .titleintro3{
+    width: 50%;
+    float: none;
+    text-align: center;
+    margin-left: 25%;
+}
+     .l3{
+         margin: 0px 10px 3px 233px;
+         float: left;
+         display: none;
+    
+    }
+    .infointro3 {
+    width: 60%;
+    padding-top: 5%;
+    float: none;
+    padding-right: 0%;
+    margin-left: 20%;
+    padding-bottom: 10%;
+        text-align: justify;
+        
+}
+    .mobile {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 9%;
+    float: none;
+}
+    .endhibbbou{
+        margin-top: 10%;
+    }
+    .endtapiela{
+        margin-top: 10%;
+    }
+    .endfanfare{
+        margin-top: 10%;
+    }
+    .endduel{
+        margin-top: 10%;
+    }
+    .endmonster{
+        margin-top: 10%;
+    }
+    
+    
+    /***** about  *****/
+    
+        
+.infofme {
+    width: 80%;
+    float: none;
+    margin-right: 0;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+  .picofme img {
+    width: 70%;
+    float: none;
+    margin-left: 15%;
+}
+ .backgroundabout {
+    height: 383vh;
+}
+    .tittleproject {
+    width: 80%;
+    margin-left: 10%;
+    letter-spacing: 5rem;
+    padding-top: 7%;
+    padding-bottom: 8%;
+}
+    /****** art ********/
+    
+    .paint{
+  width: 75%;
+  margin-left: 7.5%;
+  text-align: justify;
+  font-size: .6rem;
+  font-weight: 100;
+  font-family: 'monterrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  float: none;
+  margin-bottom: 10%;
+  vertical-align: middle;
+  display: inline-block;
+
+
+
+}
+    
+    
+    /******* contact  *****/
+    
+    #electronic{
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 12%;
+    
+}
+    
+    .mailcontact{
+        margin-left: 25%;
+    }
+    
+    .buttonmail{
+        margin-left: 25%;
+    }
+    #contactform {
+    margin-left: 10%;
+    float: none;
+    width: 90%;
+    margin-top: 28%;
+        margin-bottom: 6%;
+
+  
+}
+ #titlecontact {
+  
+    margin-left: 9%;
+}
+    #contactform input {
+    margin-right: 12%;
+    
+}
+     #contactform textarea {
+    margin-right: 12%;
+    
+}
+}
+
+@media (max-width: 400px) {
+    #sideheader {
+    width: 111%;
+}
+  #sideheader ul {
+    margin-left: -94%;
+}  
+    .tittle {
+    width: 60%;
+    padding-top: 30%;
+    margin-right: 0%;
+}
+    .fanfare{
+        width: 80%;
+        margin-left: 10%;
+    }
+  .titulo {
+    font-size: 4rem;
+
+    line-height: 3.5rem;
+    
+}
+    .subtitulo p {
+    width: 45%;
+    margin-left: 27.5%;
+   
+}
+    
+    .duel{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .menu.deskmenu{
+        display: none !important;
+        
+
+        
+    }
+
+       .subtitulo p {
+    width: 80%;
+    margin-left: 10%;
+   margin-bottom: 18%;
+      
+   
+}
+     .subtituloright p {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 18%;
+      
+        
+   
+}
+    .tituloright p {
+  
+    margin-top: 9%;
+   
+}
+    
+    .plus {
+    width: 40%;
+        margin-left: 30%;
+    padding: 4%;}
+    
+     .plusright {
+    width: 40%;
+        margin-left: 30%;
+    padding: 4%;}
+    
+    
+    .instatittle {
+    width: 95% !important;
+    margin-left: 2.5%;
+        line-height: 1.3rem;
+        padding-top: 5%;
+}
+    .instaline {
+        width: 5%;
+        margin-top: 8%;}
+    #slider {
+    padding-top: 10%;
+}
+   .con {
+  
+    padding-top: 6.1%;
+       padding-left: 1.9%; }
+    
+    
+     .community {
+    width: 80%;
+   float: none; 
+    padding-left: 0%; 
+    margin-left: 10%;
+}
+    .rights {
+        width: 67%;}
+    .instatittle1 {
+    padding-top: 20%;
+}
+    
+     .flex-direction-nav a:before {
+    font-size: 6.3vw;
+    font-weight: bolder;
+}
+  
+    
+    /********* projects iphone 6 ********/
+    
+    .tittlework {
+    width: 60%;
+    padding-top: 0%;
+    margin-left: 65px;
+    float: none;
+}
+    .contentwork {
+    width: 70%;
+    margin-left: 20%;
+    padding-top: 7%;    
+}
+    
+    .role {
+    float: none;
+    margin-top: 230%;
+}
+    .intro {
+    width: 95%;
+   margin-left: 2.5%;
+    
+}
+    .design {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 0;
+}
+    .titleintro {
+    width: 90%;
+    float: none;
+    text-align: center;
+    margin-left: 5%;
+}
+    .titleintro3 {
+    width: 90%;
+    float: none;
+    text-align: center;
+    margin-left: 5%;
+}
+    .infointro {
+    width: 85%;
+    margin-left: 7.5%;
+    line-height: 1.5rem;
+}
+    .infointro3 {
+    width: 85%;
+    margin-left: 7.5%;
+    line-height: 1.5rem;
+}
+    .design2 {
+    width: 85%;
+    margin-right: 0;
+    margin-left: 7.5%;
+}
+    .mobile {
+    width: 85%;
+    margin-left: 7.5%;
+}
+    .endhibbbou p {
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+    line-height: 2rem;
+}
+   .endtapiela p {
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+    line-height: 2rem;
+}.endduel p {
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+    line-height: 2rem;
+}.endfanfare p {
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+    line-height: 2rem;
+}.endmonster p {
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+    line-height: 2rem;
+}
+    
+    /******** about  *******/
+    .backgroundabout {
+    height: 287vh;
+         margin-left: 12%;
+}
+    .tittleproject {
+
+    letter-spacing: 3rem;
+   
+}
+    .infofme {
+   
+    font-size: 1rem;
+    letter-spacing: .01rem;
+    line-height: 1.8rem;
+   
+}
+.instatittlemeis {
+    line-height: 1.5rem;
+}
+    
+    
+    /******** Contact  ******/
+    
+    .tittleproject2 {
+    font-size: .7rem;
+    letter-spacing: 2rem;
+}
+    .mailcontact {
+    margin-left: 12%;
+    width: 80%;
+    padding-top: 10%;    
+}
+    .buttonmail {
+    margin-left: 16%;
+    width: 77%;
+}
+    .buttonmail p{
+        font-size: .7rem;
+    }
+    
+    #contactform {
+    width: 100%;
+    margin-top: 30%;
+        margin-left: 0%    
+  
+}
+    #titlecontact {
+    margin-left: 10%;
+    width: 80%;
+}
+#contactform input {
+    margin-left: 10%;
+    width: 80%;
+}
+    #contactform textarea {
+    margin-left: 10%;
+    width: 80%;
+}
+    
+    #submit{
+            margin-left: 65% !important;
+    }
+    .instalineme {
+        
+        width: 5%;}
+    
+    
+}
+
+
+
+@media (max-width: 320px) {
+    
+
+   #sideheader {
+    display: none;
+
+}
+     
+    
+ .tittleproject {
+    letter-spacing: 2.5rem;
+    padding-top: 20px;
+    
+}
+    
+    .fanfare img {
+    width: 100%;
+    margin-left: 0;
+}
+     .duel img {
+    width: 100%;
+    margin-left: 0;
+}
+  .titulo {
+    font-size: 2.5em;
+    line-height: 3rem;
+}
+    .tituloright {
+    font-size: 2.5em;
+    line-height: 3rem;
+}
+    .titulo4 {
+    font-size: 2.5em;
+    line-height: 3rem;
+}
+    .titulo3 {
+    font-size: 2.5em;
+    line-height: 3rem;
+}
+  .subtitulo p {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 18%;
+    text-align: justify;
+    line-height: 1.5rem;
+   letter-spacing: 0rem;
+}  
+     .subtituloright p {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 18%;
+    text-align: justify;
+    line-height: 1.5rem;
+   letter-spacing: 0rem;
+} 
+    
+    .plus {
+    width: 50%;
+    margin-left: 25%;
+    padding: 4%;
+}
+    .plus:hover{
+        
+        
+    }
+    .plusright {
+    width: 50%;
+    margin-left: 25%;
+    padding: 4%;
+}
+    .instatittle1 {
+  
+    font-size: 1rem;
+  
+}
+    .community {
+    width: 83%;
+    float: none;
+    padding-left: 0%;
+    margin-left: 3.5%;
+}
+    
+    
+    .con {
+    width: 80%;
+    text-align: center;
+    float: none;
+    margin-left: 10%;
+   margin-bottom: 10%;
+    padding-left: 0%;
+}
+    .rights p::after {
+  display: none;
+}
+    .rights {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+    
+    /***** projects iphone 5 ******/
+    .tittlework {
+    width: 60%;
+    padding-top: 0%;
+    margin-left: 20%;
+    float: none;
+}
+    .contentwork {
+    width: 70%;
+    margin-left: 20%;
+        text-align: justify;
+        float: none;
+        line-height: 1.5rem;
+        font-size: .9rem;
+}
+.role {
+    float: none;
+    margin-top: 248%;
+  
+} .intro {
+    width: 98%;
+    text-align: center;
+    margin-left: 1%;
+    line-height: 2rem;
+    
+}
+    
+    .design {
+    width: 100%;
+    float: none;
+    margin-top: 5%;
+    margin-left: 0;
+}
+    
+    .titleintro {
+    width: 100%;
+    margin-left: 0;
+    font-size: 2.2rem;
+    padding-top: 10.5%;    
+}
+    .infointro {
+      width: 80%;
+   line-height: 1.5rem;
+    margin-left: 10%;
+    padding-top: 12%;
+    font-size: .9rem;
+    width: 80%;
+   letter-spacing: 0rem;
+
+}
+    design2 {
+    width: 90%;
+    margin-right: 0;
+    margin-left: 5%;
+}
+    .titleintro3 {
+    width: 100%;
+    margin-left: 0;
+    font-size: 2.2rem;
+    padding-top: 10.5%;    
+}
+    
+     .infointro3 {
+    width: 80%;
+   line-height: 1.5rem;
+    margin-left: 10%;
+    padding-top: 12%;
+    font-size: .9rem;
+    width: 80%;
+   letter-spacing: 0rem;
+}
+
+ .mobile {
+    width: 90%;
+    margin-left: 5%;
+} 
+    .endhibbbou p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+    .endtapiela p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+    .endmonster p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+    .endduel p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+    .endfanfare p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+    .endline {
+    width: 5.2%;
+    height: 2px;
+    background-color: white;
+    opacity: .8;
+    margin: auto;
+    margin-top: 3%;
+    transform: rotate(90deg);
+    margin-bottom: 3%;
+}
+    .l{
+        display: none;
+    }
+    
+    
+    
+    /****** about iphone 5 ******/
+    
+    .backgroundabout {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0%;
+        margin-right: 0%;
+        height: 265vh;}
+    .infofme {
+    margin-right: 0%;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+    .instatittleme {
+ 
+    padding-top: 15%;
+   
+    font-size: 1rem;
+ 
+}
+  
+    .instatittlemeis {
+    line-height: 2rem;
+}
+    .instatittle {
+    line-height: 2rem;
+}
+    .instalineme {
+    width: 5%;
+
+    margin-top: 6%;
+   
+}
+    
+  /***** contact iphone 5 *******/
+    
+    .tittleproject2 {
+    margin-left: 20%;
+    font-size: .8rem;
+    letter-spacing: 1.5rem;
+    padding-bottom: 20%;
+}
+    .mailcontact {
+    width: 60%;
+    margin-left: 20%;}        
+
+    .buttonmail {
+    margin-left: 7.5%;
+    width: 85%;
+    float: none;
+    padding-left: 2.2%;
+    font-size: .6rem;
+}
+    #contactform {
+margin-left: 0%;
+    float: none;
+    width: 100%;
+    margin-top: 28%;
+    margin-bottom: 6%;
+        
+}
+    #titlecontact {
+    margin-left: 5%;
+    width: 90%;
+    padding-top: 5%;
+}
+    #contactform input {
+    margin-right: 0%;
+    width: 90%;
+    margin-left: 5%;    
+}
+  #contactform textarea {
+    margin-right: 0%;
+    width: 90%;
+    margin-left: 5%;
+}  
+    
+}
+
+@media not (max-width: 1024px) {
+    
+   .plus:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+    .plusright:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+    .buttonmail:hover{
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+#submit:hover{
+    background: none;
+     border: 2px solid lightgray !important;
+    background-color: lightgray !important;
+   
+}
+    
+    
+}
+
+
+
+
+
