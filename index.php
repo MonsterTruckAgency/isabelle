@@ -43,6 +43,13 @@
                 <div id="tittlesection" class="tittleproject">
                     <p>work</p>
                 </div>
+                <section id="projectsright">
+                    <div class="sectionprojectsright"> <span class="tituloright"><p style="font-size:4.5rem;">Maupassant Partenaires</p>  
+                        <span class="infoduel"><a target="_blank" href="http://isabelleteranblog.com/"><p class="mobileinfo">Webdesign/Project management</p></a></span></span>
+                        <div class="mp post">
+                            <a href="mp.php"><img class="projectright" src="img/mpimg.png" alt="graficfanfare" /></a>
+                        </div> <span class="subtituloright"><p>Guy de Maupassant  was a French writer, remembered as a representative of the naturalist school of writers, who depicted human lives and destinies and social forces in disillusioned and often pessimistic terms.</p></span> <a href="mp.php"><span class="plusright">See case study</span></a> </div>
+                </section>
                 <section id="projectsleft">
                     <div class="sectionprojects">
                         <div class="fanfare">

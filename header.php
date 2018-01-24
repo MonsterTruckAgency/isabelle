@@ -8,6 +8,7 @@
 		<li ><a href="art.php"  id="">art</a></li>
 		<li><a href="about.php"  data-url="/pages/noussommes">about</a></li>
 		<li><a href="index.php" data-url="/pages/noussommes">projects</a></li>
+    
 		
 		
 	</ul>
@@ -39,6 +40,7 @@
        <li><a href="duel.php" >duel</a></li>
 				<li><a href="fanfare.php" >fanfare la tina</a></li>
                 <li><a href="monstertruck.php" >monstertruck</a></li>
+                 <li><a href="mp.php" >maupassant</a></li>
 
 
 

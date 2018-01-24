@@ -149,7 +149,7 @@ body {
 	display: inline;
 	font-size: .8rem;
     letter-spacing: .05rem;
-    margin-left: -40%;
+    margin-left: -44%;
     letter-spacing: .05rem;
 
 
@@ -336,7 +336,7 @@ display: block;
     font-size: 6rem;
     color: #444444;
     left: 45.5%;
-    margin-top: 5%;
+    margin-top: 65%;
     line-height: 5rem;
 
 }
@@ -404,7 +404,7 @@ display: block;
     font-size: 6rem;
     color: #444444;
     margin-top: 10%;
-    line-height: 5rem;
+    line-height: 5.3rem;
     float: left;
     transition: .5s;
 
@@ -431,6 +431,20 @@ display: block;
     padding-left: 7%;
     
 }
+  .mp img {
+     width: 86%;
+    padding-right: 23%;
+    padding-top: 0%;
+    float:right;
+    padding-left: 7%;
+    
+}
+        .mp {
+   width: 55%;
+    float: right;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
 
 
 .subtituloright{
@@ -444,7 +458,7 @@ display: block;
     color: #474747;
     text-transform: uppercase;
      letter-spacing: .09rem;
-    margin-top: 5%;
+    margin-top: 4%;
 
 }
 
@@ -490,7 +504,7 @@ display: block;
     font-size: 6rem;
     color: #444444;
      left: 45.5%;
-    margin-top: 118%;
+    margin-top: 176%;
     line-height: 5rem;
     transition: .5s;
 
@@ -523,7 +537,7 @@ display: block;
     font-size: 6rem;
     color: #444444;
      left: 45.5%;
-    margin-top: 229%;
+    margin-top: 288%;
     line-height: 5rem;
     transition: .5s;
 
@@ -668,7 +682,7 @@ display: block;
 .flex-direction-nav li:last-child {
     padding-right: 0% !important;
     color:white;
-		45%;
+
 
 }
 
@@ -1076,6 +1090,27 @@ display: block;
 }
 
 .endduel p{
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .03rem;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+
+}
+
+.endmp{
+    width: 100%;
+    background-image: url("../img/backgroundmp.png");
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 4%;
+
+}
+
+.endmp p{
     font-family: 'Montserrat';
     font-weight: 100;
     font-size: 1.3rem;
@@ -1558,6 +1593,22 @@ float: none;
     padding-right: 0%;
     
 }
+      .mp img {
+     width: 80%;
+    padding-left: 0%;
+    padding-top: 5%;
+    margin-left: 10%;
+    float: none;
+    padding-right: 0%;
+    
+}
+        .mp {
+    width: 60%;
+    float: none;
+        margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
     .subtituloright {
      width: 90%;
     text-align: center;
@@ -1637,7 +1688,7 @@ float: none;
 }
     #sideheader ul {
 
-    margin-left: -50%;
+    margin-left: -55%;
     
 }
     .tittle {
@@ -1712,7 +1763,7 @@ float: none;
     }
     #sideheader ul {
 
-    margin-left: -60%;
+    margin-left: -65%;
     
 }
     .flex-direction-nav a:before {
@@ -1920,7 +1971,7 @@ float: none;
     width: 111%;
 }
   #sideheader ul {
-    margin-left: -94%;
+    margin-left: -99%;
 }  
     .tittle {
     width: 60%;

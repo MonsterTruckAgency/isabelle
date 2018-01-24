@@ -47,6 +47,69 @@
         <main id="mainabout" >
             
         <div id="tittlesection2" class="tittleproject2"><p>art</p></div>
+            
+            <section class="paintings">
+
+  
+ <div class="paint">
+           <img alt="hairandteeth" src=
+            "img/boatschook.jpg">
+            <p>"To catch it " 300x600 Paris 2017<br>Photo</p>
+
+  </div>
+ <div class="paint">
+    
+   
+     <img alt="splashblue" src=
+            "img/operaboating.jpg">
+            <p>"I see " 1200x2000 Paris 2017<br>Photo</p>
+
+
+   
+  </div>
+      <div class="paint">
+<img alt="splashviolet" src=
+            "img/beautyboat.jpg">
+            <p>"Beauty beau" 470x720 Paris 2017<br>Pohot</p>
+
+   </div>
+
+
+   
+
+
+</section>    
+        <section class="paintings">
+
+  
+ <div class="paint">
+           <img alt="hairandteeth" src=
+            "img/hairandteeth.jpg">
+            <p>"Hair and Teeth" 1200x2000 Paris 2015<br>Watercolor and Ink</p>
+
+  </div>
+ <div class="paint">
+    
+   
+     <img alt="splashblue" src=
+            "img/boat.coladera.jpg">
+            <p>"Lonely me " 1200x2000 Paris 2017<br>Photo</p>
+
+
+   
+  </div>
+      <div class="paint">
+<img alt="splashviolet" src=
+            "img/splashviolet.jpg">
+            <p>"Violetas" 120x200 Paris 2014<br>Watercolor and Ink</p>
+
+   </div>
+
+
+   
+
+
+</section>    
             <section class="paintings">
 
     <div class="paint">
