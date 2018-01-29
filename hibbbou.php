@@ -8,9 +8,9 @@
     <meta name="keywords" content="design, webdesign, html, css, php, javascript, jquery, cms, bootstrap, wordpress, graphic design, art, photos, illustrator, photoshop, paris, mexico, english, painting, htlm5, css3, javascript, php, creation, redesign, french, spanish, angency, web angency ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hibbbou site d'activités multiculturelles dédiées aux enfants à Paris.</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script 			  src="https://code.jquery.com/jquery-3.3.1.min.js" 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 			  crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/viewportchecker.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha256-VijNzkE1B0xxQ4Y8t3TeZVrOhKBbS7JLwgCZ0nOzTJE=" crossorigin="anonymous">
     </script>
     <meta content="design, webdesign, wordpress, graphic design, art, photos, illustrator, photoshop, paris, mexico, english, painting, htlm5, css3, javascript, php, creation, redesign, french, spanish, angency, web angency, web, website, websites, web design, design, graphic design, logo design, freelance, responsive, mobile, mobile design, development, responsive development, web development, unique, fun, developer, typography, hand drawn, lettering, illustration, affordable, small business, personal, blog, portfolio, store, prints, font, icons" name="keywords">
     <link rel="stylesheet" href="css/reset.css" />

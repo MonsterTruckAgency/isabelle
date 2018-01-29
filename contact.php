@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Contact Isabelle Teran</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script 			  src="https://code.jquery.com/jquery-3.3.1.min.js" 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 			  crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-      <script src="js/viewportchecker.js">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha256-VijNzkE1B0xxQ4Y8t3TeZVrOhKBbS7JLwgCZ0nOzTJE=" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="css/reset.css"/>
     

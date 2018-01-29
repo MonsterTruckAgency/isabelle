@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script 			  src="https://code.jquery.com/jquery-3.3.1.min.js" 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 			  crossorigin="anonymous"></script>
 	 <script defer src="js/jquery.flexslider.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
       
