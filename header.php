@@ -35,7 +35,6 @@
 <section id="sideheader">
 
 <ul class="projectmenu">
-       <li><a href="hibbbou.php" >hibbbou</a></li>
        <li><a href="tapiela.php" >tapiela </a></li>
        <li><a href="duel.php" >duel</a></li>
 				<li><a href="fanfare.php" >fanfare la tina</a></li>

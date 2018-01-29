@@ -279,10 +279,13 @@ display: block;
 /******** home img*******/
 
 #home{
-     height: 100vh;
+     height: 37vh;
 }
 .tittle-wrap{
     text-align: center;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 20%;
 
 }
 .tittle{
@@ -311,7 +314,7 @@ display: block;
     letter-spacing: 5rem;
     text-decoration: none;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
 
 
 }
